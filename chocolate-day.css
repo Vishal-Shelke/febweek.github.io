@@ -1,0 +1,347 @@
+/* ============================================
+   CHOCOLATE DAY STYLES
+   ============================================ */
+
+.chocolate-theme {
+    background: linear-gradient(135deg, #1a0f0a 0%, #2d1810 50%, #1a0a05 100%);
+}
+
+/* Chocolate Drips */
+.chocolate-drips {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.drip {
+    position: absolute;
+    top: -50px;
+    width: 30px;
+    height: 80px;
+    background: linear-gradient(to bottom, #5d3a1a, #8b4513);
+    border-radius: 0 0 50% 50%;
+    animation: dripFall 4s ease-in infinite;
+}
+
+@keyframes dripFall {
+    0% {
+        transform: translateY(-100px) scaleY(0.5);
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.8;
+        transform: translateY(0) scaleY(1);
+    }
+    100% {
+        transform: translateY(100vh) scaleY(1.5);
+        opacity: 0;
+    }
+}
+
+/* Chocolate Navigation */
+.chocolate-nav {
+    background: rgba(139, 69, 19, 0.2);
+    border-bottom: 1px solid rgba(139, 69, 19, 0.3);
+}
+
+/* Chocolate Main */
+.chocolate-main {
+    min-height: 100vh;
+    padding: 100px 20px 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.chocolate-hero {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.chocolate-hero h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    color: #d4a574;
+    text-shadow: 0 0 30px rgba(212, 165, 116, 0.5);
+    margin-bottom: 15px;
+}
+
+.chocolate-hero h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: #f4d03f;
+    margin-bottom: 30px;
+}
+
+.chocolate-message {
+    background: rgba(139, 69, 19, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 700px;
+    border: 1px solid rgba(212, 165, 116, 0.3);
+}
+
+.chocolate-message p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Chocolate Box */
+.chocolate-box-section {
+    margin: 50px auto;
+}
+
+.chocolate-box-section h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8rem;
+    color: #d4a574;
+    margin-bottom: 30px;
+}
+
+.chocolate-box {
+    width: 350px;
+    height: 280px;
+    margin: 0 auto;
+    position: relative;
+    perspective: 1000px;
+}
+
+.chocolate-box .box-lid {
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(135deg, #c9184a 0%, #8b0000 100%);
+    border-radius: 10px 10px 0 0;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    transform-origin: top;
+    transition: transform 0.8s ease;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffd700;
+    font-weight: bold;
+    box-shadow: 0 5px 20px rgba(201, 24, 74, 0.5);
+}
+
+.chocolate-box .box-lid .ribbon {
+    position: absolute;
+    width: 30px;
+    height: 100%;
+    background: #ffd700;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.chocolate-box .box-lid .ribbon::before,
+.chocolate-box .box-lid .ribbon::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #ffd700;
+    border-radius: 50%;
+    top: -20px;
+}
+
+.chocolate-box .box-lid .ribbon::before {
+    left: -25px;
+}
+
+.chocolate-box .box-lid .ribbon::after {
+    right: -25px;
+}
+
+.chocolate-box.opened .box-lid {
+    transform: rotateX(-100deg);
+}
+
+.box-content {
+    width: 100%;
+    height: 220px;
+    background: linear-gradient(135deg, #8b0000 0%, #5d0000 100%);
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    box-shadow: inset 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.chocolate-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.chocolate {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.chocolate:hover {
+    transform: scale(1.15) rotate(5deg);
+}
+
+.choco-piece {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.choco-piece.dark {
+    background: linear-gradient(135deg, #2d1810 0%, #1a0f0a 100%);
+}
+
+.choco-piece.milk {
+    background: linear-gradient(135deg, #8b4513 0%, #5d3a1a 100%);
+}
+
+.choco-piece.white {
+    background: linear-gradient(135deg, #f5f5dc 0%, #ddd 100%);
+}
+
+.choco-piece.caramel {
+    background: linear-gradient(135deg, #d4a574 0%, #a67c52 100%);
+}
+
+.choco-piece.heart {
+    background: linear-gradient(135deg, #c9184a 0%, #8b0000 100%);
+    border-radius: 50%;
+    font-size: 2rem;
+}
+
+.choco-piece.truffle {
+    background: linear-gradient(135deg, #4a3728 0%, #2d1810 100%);
+    border-radius: 50%;
+}
+
+.chocolate.eaten .choco-piece {
+    opacity: 0.3;
+    transform: scale(0.8);
+}
+
+.flavor-display {
+    margin-top: 20px;
+    min-height: 60px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    color: #f4d03f;
+    animation: fadeIn 0.5s ease;
+}
+
+/* Chocolate Facts */
+.chocolate-facts {
+    margin: 50px auto;
+}
+
+.chocolate-facts h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8rem;
+    color: #d4a574;
+    margin-bottom: 30px;
+}
+
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.fact-card {
+    background: rgba(139, 69, 19, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 25px;
+    border: 1px solid rgba(212, 165, 116, 0.3);
+    transition: all 0.3s ease;
+}
+
+.fact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(139, 69, 19, 0.4);
+}
+
+.fact-icon {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.fact-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Chocolate Poem */
+.chocolate-poem {
+    margin: 50px auto;
+    max-width: 500px;
+}
+
+.poem-wrapper {
+    background: linear-gradient(135deg, rgba(139, 69, 19, 0.3), rgba(93, 58, 26, 0.3));
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    border: 2px solid #d4a574;
+}
+
+.poem-wrapper p {
+    font-size: 1.3rem;
+    line-height: 2;
+    color: #f4d03f;
+}
+
+.poem-wrapper .signature {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    color: #d4a574;
+    margin-top: 20px;
+}
+
+/* Chocolate Footer */
+.chocolate-footer {
+    background: rgba(93, 58, 26, 0.4);
+}
+
+.chocolate-footer p {
+    color: #d4a574;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .chocolate-box {
+        width: 280px;
+        height: 250px;
+    }
+    
+    .chocolate {
+        width: 55px;
+        height: 55px;
+    }
+    
+    .chocolate-hero h1 {
+        font-size: 2rem;
+    }
+}

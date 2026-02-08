@@ -1,0 +1,337 @@
+/* ============================================
+   ROSE DAY STYLES
+   ============================================ */
+
+.rose-theme {
+    background: linear-gradient(135deg, #1a0a0a 0%, #2d0a0a 50%, #1a0505 100%);
+}
+
+/* Falling Petals */
+.falling-petals {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.petal-fall {
+    position: absolute;
+    font-size: 20px;
+    animation: petalFall 10s linear infinite;
+    opacity: 0.8;
+}
+
+@keyframes petalFall {
+    0% {
+        transform: translateY(-100px) rotate(0deg) translateX(0);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.8;
+    }
+    90% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(100vh) rotate(720deg) translateX(100px);
+        opacity: 0;
+    }
+}
+
+/* Rose Navigation */
+.rose-nav {
+    background: rgba(200, 50, 50, 0.1);
+    border-bottom: 1px solid rgba(255, 100, 100, 0.2);
+}
+
+/* Rose Main */
+.rose-main {
+    min-height: 100vh;
+    padding: 100px 20px 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.rose-hero {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Animated Rose */
+.rose-animation {
+    margin: 40px auto;
+    position: relative;
+    width: 200px;
+    height: 350px;
+}
+
+.rose-bloom {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    animation: roseBloom 3s ease-out forwards;
+}
+
+@keyframes roseBloom {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.rose-petals {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.petal {
+    position: absolute;
+    width: 60px;
+    height: 80px;
+    background: linear-gradient(135deg, #ff3366 0%, #c9184a 50%, #8b0000 100%);
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    transform-origin: bottom center;
+    animation: petalOpen 2s ease-out forwards;
+    box-shadow: inset -5px -5px 15px rgba(0, 0, 0, 0.3),
+                inset 5px 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+.petal.p1 { left: 45px; top: 20px; transform: rotate(0deg); animation-delay: 0.1s; }
+.petal.p2 { left: 70px; top: 35px; transform: rotate(45deg); animation-delay: 0.2s; }
+.petal.p3 { left: 75px; top: 60px; transform: rotate(90deg); animation-delay: 0.3s; }
+.petal.p4 { left: 60px; top: 80px; transform: rotate(135deg); animation-delay: 0.4s; }
+.petal.p5 { left: 35px; top: 80px; transform: rotate(180deg); animation-delay: 0.5s; }
+.petal.p6 { left: 15px; top: 60px; transform: rotate(225deg); animation-delay: 0.6s; }
+.petal.p7 { left: 10px; top: 35px; transform: rotate(270deg); animation-delay: 0.7s; }
+.petal.p8 { left: 25px; top: 20px; transform: rotate(315deg); animation-delay: 0.8s; }
+
+@keyframes petalOpen {
+    0% {
+        transform: rotate(var(--rotation, 0deg)) scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(var(--rotation, 0deg)) scale(1);
+        opacity: 1;
+    }
+}
+
+.rose-center {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: radial-gradient(circle, #ff6b6b 0%, #c9184a 50%, #8b0000 100%);
+    border-radius: 50%;
+    top: 55px;
+    left: 55px;
+    z-index: 10;
+    animation: centerPulse 2s ease-in-out infinite;
+}
+
+@keyframes centerPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+.rose-stem {
+    width: 8px;
+    height: 180px;
+    background: linear-gradient(to right, #228B22, #006400, #228B22);
+    margin: 0 auto;
+    border-radius: 4px;
+    position: relative;
+    animation: stemGrow 1s ease-out forwards;
+}
+
+@keyframes stemGrow {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 180px;
+    }
+}
+
+.rose-leaves {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.leaf {
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    background: linear-gradient(135deg, #32CD32 0%, #228B22 50%, #006400 100%);
+    border-radius: 0 50% 0 50%;
+    animation: leafGrow 0.5s ease-out forwards;
+}
+
+.leaf.left {
+    left: -45px;
+    transform: rotate(-30deg);
+    animation-delay: 1s;
+}
+
+.leaf.right {
+    right: -45px;
+    transform: rotate(30deg) scaleX(-1);
+    animation-delay: 1.2s;
+}
+
+@keyframes leafGrow {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Rose Content */
+.rose-content h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    color: #ff6b6b;
+    text-shadow: 0 0 30px rgba(255, 107, 107, 0.5);
+    margin-bottom: 15px;
+}
+
+.rose-content h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: #ffc2d1;
+    margin-bottom: 30px;
+}
+
+.rose-message {
+    background: rgba(255, 107, 107, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 700px;
+    border: 1px solid rgba(255, 107, 107, 0.3);
+}
+
+.rose-message p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.special-note {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem !important;
+    color: #ff6b6b;
+}
+
+/* Rose Bouquet Collection */
+.rose-bouquet {
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    max-width: 600px;
+}
+
+.rose-bouquet h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8rem;
+    color: #ff6b6b;
+    margin-bottom: 20px;
+}
+
+.bouquet-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.collectible-rose {
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: roseFloat 2s ease-in-out infinite;
+}
+
+.collectible-rose:hover {
+    transform: scale(1.3);
+}
+
+.collectible-rose:nth-child(2) { animation-delay: 0.2s; }
+.collectible-rose:nth-child(3) { animation-delay: 0.4s; }
+.collectible-rose:nth-child(4) { animation-delay: 0.6s; }
+
+@keyframes roseFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.my-bouquet {
+    font-size: 1.2rem;
+    min-height: 50px;
+}
+
+#bouquetDisplay {
+    font-size: 2rem;
+}
+
+/* Rose Poem */
+.rose-poem {
+    margin: 40px auto;
+    max-width: 500px;
+}
+
+.rose-poem h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8rem;
+    color: #ff6b6b;
+    margin-bottom: 20px;
+}
+
+.poem-card {
+    background: linear-gradient(135deg, rgba(255, 107, 107, 0.2), rgba(201, 24, 74, 0.2));
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    border: 1px solid rgba(255, 107, 107, 0.3);
+}
+
+.poem-card p {
+    font-size: 1.2rem;
+    line-height: 2;
+    color: #ffc2d1;
+}
+
+.poem-signature {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem !important;
+    color: #ff6b6b;
+    margin-top: 20px;
+}
+
+/* Rose Footer */
+.rose-footer {
+    background: rgba(139, 0, 0, 0.3);
+}
+
+.rose-footer p {
+    color: #ff6b6b;
+}

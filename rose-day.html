@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌹 Rose Day - For Priyanka 🌹</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="rose-day.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="rose-theme">
+    <div class="falling-petals" id="fallingPetals"></div>
+    
+    <nav class="navbar rose-nav">
+        <div class="nav-brand">💕 V & P 💕</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="rose-day.html" class="active">Rose Day</a>
+            <a href="propose-day.html">Propose Day</a>
+            <a href="chocolate-day.html">Chocolate Day</a>
+            <a href="teddy-day.html">Teddy Day</a>
+            <a href="promise-day.html">Promise Day</a>
+            <a href="hug-day.html">Hug Day</a>
+            <a href="valentine-day.html">Valentine's Day</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main class="rose-main">
+        <div class="rose-hero">
+            <div class="rose-animation">
+                <div class="rose-bloom">
+                    <div class="rose-petals">
+                        <div class="petal p1"></div>
+                        <div class="petal p2"></div>
+                        <div class="petal p3"></div>
+                        <div class="petal p4"></div>
+                        <div class="petal p5"></div>
+                        <div class="petal p6"></div>
+                        <div class="petal p7"></div>
+                        <div class="petal p8"></div>
+                    </div>
+                    <div class="rose-center"></div>
+                </div>
+                <div class="rose-stem"></div>
+                <div class="rose-leaves">
+                    <div class="leaf left"></div>
+                    <div class="leaf right"></div>
+                </div>
+            </div>
+            
+            <div class="rose-content">
+                <h1>🌹 Happy Rose Day 🌹</h1>
+                <h2>My Beautiful Priyanka</h2>
+                <div class="rose-message">
+                    <p>Like a rose that blooms in the garden of love, you bring beauty and fragrance to my life every single day.</p>
+                    <p>A red rose for my eternal love,<br>
+                    A pink rose for my gratitude,<br>
+                    A white rose for our pure bond,<br>
+                    And a yellow rose for our friendship.</p>
+                    <p class="special-note">But no rose in this world can match your beauty, my love! 🌹</p>
+                </div>
+                
+                <div class="rose-bouquet">
+                    <h3>Click to collect roses for your bouquet!</h3>
+                    <div class="bouquet-container">
+                        <div class="collectible-rose" onclick="collectRose('red')" data-color="red">🌹</div>
+                        <div class="collectible-rose" onclick="collectRose('pink')" data-color="pink">🌸</div>
+                        <div class="collectible-rose" onclick="collectRose('white')" data-color="white">🤍</div>
+                        <div class="collectible-rose" onclick="collectRose('yellow')" data-color="yellow">🌻</div>
+                    </div>
+                    <div class="my-bouquet" id="myBouquet">
+                        <p>Your Bouquet: <span id="bouquetDisplay"></span></p>
+                    </div>
+                </div>
+                
+                <div class="rose-poem">
+                    <h3>A Poem For You 📝</h3>
+                    <div class="poem-card">
+                        <p><em>Roses are red, violets are blue,</em></p>
+                        <p><em>Sugar is sweet, and so are you.</em></p>
+                        <p><em>But the roses have thorns, and violets can fade,</em></p>
+                        <p><em>My love for you, Priyanka, will never degrade.</em></p>
+                        <p class="poem-signature">- Your Vishal 💕</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="navigation-buttons">
+            <a href="index.html" class="nav-btn prev"><i class="fas fa-arrow-left"></i> Home</a>
+            <a href="propose-day.html" class="nav-btn next">Propose Day <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </main>
+
+    <footer class="rose-footer">
+        <p>A garden of roses for my Queen 🌹 - From Vishal</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="rose-day.js"></script>
+</body>
+</html>

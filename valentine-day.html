@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💕 Valentine's Day - Forever Yours, Priyanka 💕</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="valentine-day.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="valentine-theme">
+    <div class="fireworks-container" id="fireworks"></div>
+    <div class="hearts-explosion" id="heartsExplosion"></div>
+    
+    <nav class="navbar valentine-nav">
+        <div class="nav-brand">💕 V & P 💕</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="rose-day.html">Rose Day</a>
+            <a href="propose-day.html">Propose Day</a>
+            <a href="chocolate-day.html">Chocolate Day</a>
+            <a href="teddy-day.html">Teddy Day</a>
+            <a href="promise-day.html">Promise Day</a>
+            <a href="hug-day.html">Hug Day</a>
+            <a href="valentine-day.html" class="active">Valentine's Day</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main class="valentine-main">
+        <div class="valentine-hero">
+            <div class="grand-entrance">
+                <h1 class="main-title">💕 Happy Valentine's Day 💕</h1>
+                <h2 class="subtitle">My Forever Love, Priyanka</h2>
+            </div>
+            
+            <div class="beating-heart-section">
+                <div class="giant-heart" id="giantHeart" onclick="heartBurst()">
+                    <div class="heart-shape"></div>
+                    <span class="initials">V ❤️ P</span>
+                    <div class="pulse-ring"></div>
+                    <div class="pulse-ring delay"></div>
+                </div>
+                <p class="heart-instruction">Click the heart! 💕</p>
+            </div>
+            
+            <div class="love-letter-section">
+                <div class="final-letter">
+                    <div class="letter-header">
+                        <span class="date">February 14, 2025</span>
+                        <span class="hearts">💕💖💗💓💕</span>
+                    </div>
+                    <div class="letter-body">
+                        <p class="greeting">My Dearest Priyanka,</p>
+                        <p>As I write this letter, my heart overflows with emotions that words can barely capture. You are not just my wife; you are my soulmate, my best friend, my everything.</p>
+                        <p>Every morning I wake up grateful that you chose me. Every night I fall asleep thankful for another day spent loving you. You have transformed my life into a beautiful love story that I never want to end.</p>
+                        <p>Your smile is my sunshine, your voice is my favorite melody, and your love is the greatest gift I have ever received. Being with you makes even the ordinary moments feel magical.</p>
+                        <p>Together, we've built a beautiful life filled with love, dreams, and endless happiness. Every adventure with you is a treasure, every quiet moment together is a blessing.</p>
+                        <p>With you, every day feels like Valentine's Day. Thank you for being you. Thank you for loving me. Thank you for making my life complete.</p>
+                        <p class="closing">Forever and always yours,</p>
+                        <p class="signature-name">Vishal 💕</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="reasons-section">
+                <h3>14 Reasons Why I Love You 💕</h3>
+                <div class="reasons-grid" id="reasonsGrid">
+                    <div class="reason-card" data-reason="1">
+                        <span class="number">1</span>
+                        <p>Your beautiful smile that lights up my world</p>
+                    </div>
+                    <div class="reason-card" data-reason="2">
+                        <span class="number">2</span>
+                        <p>Your kind and caring heart</p>
+                    </div>
+                    <div class="reason-card" data-reason="3">
+                        <span class="number">3</span>
+                        <p>The way you understand me without words</p>
+                    </div>
+                    <div class="reason-card" data-reason="4">
+                        <span class="number">4</span>
+                        <p>Your infectious positivity</p>
+                    </div>
+                    <div class="reason-card" data-reason="5">
+                        <span class="number">5</span>
+                        <p>How you make every moment special</p>
+                    </div>
+                    <div class="reason-card" data-reason="6">
+                        <span class="number">6</span>
+                        <p>Your unwavering support</p>
+                    </div>
+                    <div class="reason-card" data-reason="7">
+                        <span class="number">7</span>
+                        <p>The way you make me laugh</p>
+                    </div>
+                    <div class="reason-card" data-reason="8">
+                        <span class="number">8</span>
+                        <p>Your strength and determination</p>
+                    </div>
+                    <div class="reason-card" data-reason="9">
+                        <span class="number">9</span>
+                        <p>How you believe in me</p>
+                    </div>
+                    <div class="reason-card" data-reason="10">
+                        <span class="number">10</span>
+                        <p>Your beautiful soul</p>
+                    </div>
+                    <div class="reason-card" data-reason="11">
+                        <span class="number">11</span>
+                        <p>The adventures we share together</p>
+                    </div>
+                    <div class="reason-card" data-reason="12">
+                        <span class="number">12</span>
+                        <p>How you make our house a home</p>
+                    </div>
+                    <div class="reason-card" data-reason="13">
+                        <span class="number">13</span>
+                        <p>Your patience and understanding</p>
+                    </div>
+                    <div class="reason-card" data-reason="14">
+                        <span class="number">14</span>
+                        <p>Simply because you're YOU! 💕</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="celebration-section">
+                <button class="celebrate-btn" onclick="startCelebration()">
+                    🎉 Click to Celebrate Our Love! 🎉
+                </button>
+            </div>
+            
+            <div class="final-message">
+                <div class="message-box">
+                    <h3>💕 My Promise to You 💕</h3>
+                    <p>Today and every day, I promise to love you with all my heart, to cherish every moment we share, and to be your partner in everything life brings our way.</p>
+                    <p>You are my today and all of my tomorrows.</p>
+                    <p class="signature">~ Your Vishal 💕</p>
+                </div>
+            </div>
+            
+            <div class="our-journey">
+                <h3>Our Love Journey 💕</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon">💫</div>
+                        <div class="timeline-content">
+                            <h4>When We Met</h4>
+                            <p>The day my life changed forever</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">💕</div>
+                        <div class="timeline-content">
+                            <h4>Falling in Love</h4>
+                            <p>Every moment made me fall deeper</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">💍</div>
+                        <div class="timeline-content">
+                            <h4>Our Wedding</h4>
+                            <p>The happiest day of my life</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">🏠</div>
+                        <div class="timeline-content">
+                            <h4>Building Our Life</h4>
+                            <p>Creating beautiful memories together</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">♾️</div>
+                        <div class="timeline-content">
+                            <h4>Forever Together</h4>
+                            <p>Our love story continues...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="navigation-buttons">
+            <a href="hug-day.html" class="nav-btn prev"><i class="fas fa-arrow-left"></i> Hug Day</a>
+            <a href="index.html" class="nav-btn next">Back to Home <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </main>
+
+    <footer class="valentine-footer">
+        <p>Made with infinite love 💕 For My Priyanka - From Your Vishal</p>
+        <p class="footer-hearts">💕💖💗💓💝💘❤️🩷</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="valentine-day.js"></script>
+</body>
+</html>

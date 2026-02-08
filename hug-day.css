@@ -1,0 +1,391 @@
+/* ============================================
+   HUG DAY STYLES
+   ============================================ */
+
+.hug-theme {
+    background: linear-gradient(135deg, #1a0a15 0%, #2d0a20 50%, #1a0510 100%);
+}
+
+/* Warm Glow */
+.warm-glow {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255, 143, 171, 0.2) 0%, transparent 70%);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 0;
+    animation: warmPulse 3s ease-in-out infinite;
+}
+
+@keyframes warmPulse {
+    0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.5; }
+    50% { transform: translate(-50%, -50%) scale(1.2); opacity: 0.8; }
+}
+
+/* Hug Navigation */
+.hug-nav {
+    background: rgba(255, 143, 171, 0.1);
+    border-bottom: 1px solid rgba(255, 143, 171, 0.2);
+}
+
+/* Hug Main */
+.hug-main {
+    min-height: 100vh;
+    padding: 100px 20px 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.hug-hero {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hug-hero h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    color: #ff8fab;
+    text-shadow: 0 0 30px rgba(255, 143, 171, 0.5);
+    margin-bottom: 15px;
+}
+
+.hug-hero h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: #ffc2d1;
+    margin-bottom: 30px;
+}
+
+/* Hugging Couple Animation */
+.hug-animation-container {
+    margin: 40px auto;
+    position: relative;
+    height: 250px;
+}
+
+.hugging-couple {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    height: 100%;
+}
+
+.person {
+    position: relative;
+    width: 80px;
+}
+
+.person .head {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #ffcba4 0%, #e0ac69 100%);
+    border-radius: 50%;
+    margin: 0 auto 5px;
+}
+
+.person .body {
+    width: 60px;
+    height: 100px;
+    border-radius: 30px 30px 0 0;
+    margin: 0 auto;
+}
+
+.person1 .body {
+    background: linear-gradient(135deg, #4a90d9 0%, #2d5aa0 100%);
+}
+
+.person2 .body {
+    background: linear-gradient(135deg, #ff6b9d 0%, #c9184a 100%);
+}
+
+.person .arm {
+    width: 20px;
+    height: 70px;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.person1 .arm {
+    background: linear-gradient(135deg, #4a90d9 0%, #2d5aa0 100%);
+}
+
+.person2 .arm {
+    background: linear-gradient(135deg, #ff6b9d 0%, #c9184a 100%);
+}
+
+.person1 .arm-front {
+    right: -30px;
+    top: 60px;
+    transform: rotate(-30deg);
+    animation: hugArm1 2s ease-in-out infinite;
+}
+
+.person2 .arm-front {
+    left: -30px;
+    top: 60px;
+    transform: rotate(30deg);
+    animation: hugArm2 2s ease-in-out infinite;
+}
+
+@keyframes hugArm1 {
+    0%, 100% { transform: rotate(-30deg); }
+    50% { transform: rotate(-45deg); }
+}
+
+@keyframes hugArm2 {
+    0%, 100% { transform: rotate(30deg); }
+    50% { transform: rotate(45deg); }
+}
+
+.love-aura {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 107, 157, 0.3) 0%, transparent 70%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: auraPulse 2s ease-in-out infinite;
+}
+
+@keyframes auraPulse {
+    0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.5; }
+    50% { transform: translate(-50%, -50%) scale(1.3); opacity: 0.8; }
+}
+
+.floating-hearts-hug {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.floating-hearts-hug span {
+    position: absolute;
+    font-size: 1.5rem;
+    animation: floatUp 2s ease-out infinite;
+}
+
+.floating-hearts-hug span:nth-child(1) { left: -30px; animation-delay: 0s; }
+.floating-hearts-hug span:nth-child(2) { left: 0; animation-delay: 0.5s; }
+.floating-hearts-hug span:nth-child(3) { left: 30px; animation-delay: 1s; }
+
+@keyframes floatUp {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-50px); opacity: 0; }
+}
+
+/* Virtual Hug Section */
+.virtual-hug-section {
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(255, 143, 171, 0.1);
+    border-radius: 30px;
+    max-width: 500px;
+}
+
+.virtual-hug-section h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8rem;
+    color: #ff8fab;
+    margin-bottom: 20px;
+}
+
+.mega-hug-btn {
+    padding: 25px 50px;
+    font-size: 1.3rem;
+    background: linear-gradient(135deg, #ff8fab 0%, #ff6b9d 50%, #c9184a 100%);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 0 auto;
+    box-shadow: 0 10px 40px rgba(255, 107, 157, 0.4);
+}
+
+.mega-hug-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 50px rgba(255, 107, 157, 0.6);
+}
+
+.mega-hug-btn:active {
+    transform: scale(0.95);
+}
+
+.hug-icon {
+    font-size: 2rem;
+    animation: hugIconBounce 1s ease-in-out infinite;
+}
+
+@keyframes hugIconBounce {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+/* Hug Meter */
+.hug-meter {
+    margin-top: 30px;
+}
+
+.warmth-bar {
+    width: 100%;
+    height: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 15px 0;
+}
+
+.warmth-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #48cae4, #ff8fab, #ff6b9d, #c9184a);
+    border-radius: 15px;
+    transition: width 0.5s ease;
+}
+
+#warmthLevel {
+    font-size: 1.5rem;
+}
+
+.hug-count {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.3rem;
+    color: #ff8fab;
+}
+
+#hugsSent {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Hug Message */
+.hug-message {
+    margin: 40px auto;
+    max-width: 700px;
+}
+
+.message-bubble {
+    background: rgba(255, 143, 171, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    border: 1px solid rgba(255, 143, 171, 0.3);
+}
+
+.message-bubble p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* Hug Types */
+.hug-types {
+    margin: 50px auto;
+}
+
+.hug-types h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8rem;
+    color: #ff8fab;
+    margin-bottom: 30px;
+}
+
+.hug-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hug-card {
+    background: rgba(255, 143, 171, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 143, 171, 0.2);
+}
+
+.hug-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(255, 107, 157, 0.3);
+    background: rgba(255, 143, 171, 0.2);
+}
+
+.hug-emoji {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hug-card h4 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.3rem;
+    color: #ff8fab;
+    margin-bottom: 10px;
+}
+
+.hug-card p {
+    font-size: 0.95rem;
+    color: #ffc2d1;
+}
+
+/* Hug Poem */
+.hug-poem {
+    margin: 50px auto;
+    max-width: 500px;
+}
+
+.hug-poem .poem-card {
+    background: linear-gradient(135deg, rgba(255, 143, 171, 0.2), rgba(255, 107, 157, 0.2));
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    border: 2px solid #ff8fab;
+}
+
+.hug-poem .poem-card p {
+    font-size: 1.2rem;
+    line-height: 2;
+    color: #ffc2d1;
+}
+
+.hug-poem .signature {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem !important;
+    color: #ff8fab;
+    margin-top: 20px;
+}
+
+/* Hug Footer */
+.hug-footer {
+    background: rgba(201, 24, 74, 0.3);
+}
+
+.hug-footer p {
+    color: #ff8fab;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hug-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .mega-hug-btn {
+        padding: 20px 35px;
+        font-size: 1.1rem;
+    }
+}

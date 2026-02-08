@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍫 Chocolate Day - Sweet Treats for Priyanka 🍫</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="chocolate-day.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="chocolate-theme">
+    <div class="chocolate-drips" id="chocolateDrips"></div>
+    
+    <nav class="navbar chocolate-nav">
+        <div class="nav-brand">💕 V & P 💕</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="rose-day.html">Rose Day</a>
+            <a href="propose-day.html">Propose Day</a>
+            <a href="chocolate-day.html" class="active">Chocolate Day</a>
+            <a href="teddy-day.html">Teddy Day</a>
+            <a href="promise-day.html">Promise Day</a>
+            <a href="hug-day.html">Hug Day</a>
+            <a href="valentine-day.html">Valentine's Day</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main class="chocolate-main">
+        <div class="chocolate-hero">
+            <h1>🍫 Happy Chocolate Day 🍫</h1>
+            <h2>For My Sweetest Priyanka</h2>
+            
+            <div class="chocolate-message">
+                <p>You're sweeter than the finest chocolate, more precious than the rarest cocoa, and more delightful than any dessert in the world!</p>
+            </div>
+            
+            <div class="chocolate-box-section">
+                <h3>Open Your Chocolate Box! 🎁</h3>
+                <div class="chocolate-box" id="chocolateBox">
+                    <div class="box-lid" onclick="openChocolateBox()">
+                        <span>Click to Open</span>
+                        <div class="ribbon"></div>
+                    </div>
+                    <div class="box-content">
+                        <div class="chocolate-row">
+                            <div class="chocolate" onclick="eatChocolate(this)" data-flavor="Dark Chocolate - As deep as my love">
+                                <div class="choco-piece dark"></div>
+                            </div>
+                            <div class="chocolate" onclick="eatChocolate(this)" data-flavor="Milk Chocolate - Sweet like your smile">
+                                <div class="choco-piece milk"></div>
+                            </div>
+                            <div class="chocolate" onclick="eatChocolate(this)" data-flavor="White Chocolate - Pure like our bond">
+                                <div class="choco-piece white"></div>
+                            </div>
+                        </div>
+                        <div class="chocolate-row">
+                            <div class="chocolate" onclick="eatChocolate(this)" data-flavor="Caramel Filled - Gooey like my heart for you">
+                                <div class="choco-piece caramel"></div>
+                            </div>
+                            <div class="chocolate heart-shaped" onclick="eatChocolate(this)" data-flavor="Heart Chocolate - My whole heart is yours">
+                                <div class="choco-piece heart">💝</div>
+                            </div>
+                            <div class="chocolate" onclick="eatChocolate(this)" data-flavor="Truffle - Rich like our memories">
+                                <div class="choco-piece truffle"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flavor-display" id="flavorDisplay"></div>
+            </div>
+            
+            <div class="chocolate-facts">
+                <h3>Why You're Like Chocolate 🍫</h3>
+                <div class="facts-grid">
+                    <div class="fact-card">
+                        <span class="fact-icon">😊</span>
+                        <p>You make me happy, just like chocolate releases endorphins!</p>
+                    </div>
+                    <div class="fact-card">
+                        <span class="fact-icon">💕</span>
+                        <p>You're irresistible - I can never get enough of you!</p>
+                    </div>
+                    <div class="fact-card">
+                        <span class="fact-icon">✨</span>
+                        <p>You make everything better, just like chocolate in any recipe!</p>
+                    </div>
+                    <div class="fact-card">
+                        <span class="fact-icon">🌟</span>
+                        <p>You're a perfect blend of sweet and wonderful!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chocolate-poem">
+                <div class="poem-wrapper">
+                    <p><em>Chocolate is sweet,</em></p>
+                    <p><em>But you're sweeter still,</em></p>
+                    <p><em>My love for you, Priyanka,</em></p>
+                    <p><em>No chocolate can fulfill!</em></p>
+                    <p class="signature">💕 Vishal</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="navigation-buttons">
+            <a href="propose-day.html" class="nav-btn prev"><i class="fas fa-arrow-left"></i> Propose Day</a>
+            <a href="teddy-day.html" class="nav-btn next">Teddy Day <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </main>
+
+    <footer class="chocolate-footer">
+        <p>Life is sweet with you 🍫 - Your Vishal</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="chocolate-day.js"></script>
+</body>
+</html>

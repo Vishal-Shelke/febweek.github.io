@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💕 For My Priyanka - Valentine's Week 2025 💕</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="floating-hearts" id="floatingHearts"></div>
+    
+    <nav class="navbar">
+        <div class="nav-brand">💕 V & P 💕</div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="rose-day.html">Rose Day</a>
+            <a href="propose-day.html">Propose Day</a>
+            <a href="chocolate-day.html">Chocolate Day</a>
+            <a href="teddy-day.html">Teddy Day</a>
+            <a href="promise-day.html">Promise Day</a>
+            <a href="hug-day.html">Hug Day</a>
+            <a href="valentine-day.html">Valentine's Day</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main class="hero-section">
+        <div class="hero-content">
+            <div class="love-envelope" onclick="openEnvelope()">
+                <div class="envelope">
+                    <div class="envelope-flap"></div>
+                    <div class="envelope-body"></div>
+                    <div class="letter">
+                        <p>Click to open my heart 💌</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-text" id="heroText">
+                <h1 class="glowing-text">Happy Valentine's Week</h1>
+                <h2 class="typewriter">My Dearest Priyanka</h2>
+                <p class="love-message">Every moment with you is a treasure, every smile you share lights up my world. This Valentine's Week, I want to celebrate our love story - the most beautiful story ever written.</p>
+                <p class="signature">Forever Yours, <span class="heart-beat">Vishal</span> 💕</p>
+                
+                <div class="countdown-container">
+                    <h3>💝 Valentine's Day Countdown 💝</h3>
+                    <div class="countdown" id="countdown">
+                        <div class="countdown-item">
+                            <span id="days">00</span>
+                            <label>Days</label>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="hours">00</span>
+                            <label>Hours</label>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="minutes">00</span>
+                            <label>Minutes</label>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="seconds">00</span>
+                            <label>Seconds</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="week-cards">
+                    <a href="rose-day.html" class="day-card rose">
+                        <i class="fas fa-spa"></i>
+                        <span>Rose Day</span>
+                        <small>Feb 7</small>
+                    </a>
+                    <a href="propose-day.html" class="day-card propose">
+                        <i class="fas fa-ring"></i>
+                        <span>Propose Day</span>
+                        <small>Feb 8</small>
+                    </a>
+                    <a href="chocolate-day.html" class="day-card chocolate">
+                        <i class="fas fa-cookie-bite"></i>
+                        <span>Chocolate Day</span>
+                        <small>Feb 9</small>
+                    </a>
+                    <a href="teddy-day.html" class="day-card teddy">
+                        <i class="fas fa-paw"></i>
+                        <span>Teddy Day</span>
+                        <small>Feb 10</small>
+                    </a>
+                    <a href="promise-day.html" class="day-card promise">
+                        <i class="fas fa-hand-holding-heart"></i>
+                        <span>Promise Day</span>
+                        <small>Feb 11</small>
+                    </a>
+                    <a href="hug-day.html" class="day-card hug">
+                        <i class="fas fa-hands-holding-heart"></i>
+                        <span>Hug Day</span>
+                        <small>Feb 12</small>
+                    </a>
+                    <a href="valentine-day.html" class="day-card valentine">
+                        <i class="fas fa-heart"></i>
+                        <span>Valentine's Day</span>
+                        <small>Feb 14</small>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="love-meter">
+            <h3>Our Love Meter 💕</h3>
+            <div class="meter-container">
+                <div class="meter-fill" id="loveMeter"></div>
+            </div>
+            <p>∞ Infinite Love ∞</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Made with 💕 by Vishal for his Queen Priyanka</p>
+        <div class="social-hearts">
+            <span>💕</span><span>💖</span><span>💗</span><span>💓</span><span>💕</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

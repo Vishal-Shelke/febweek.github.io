@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🤗 Hug Day - Warm Hugs for Priyanka 🤗</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="hug-day.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="hug-theme">
+    <div class="warm-glow" id="warmGlow"></div>
+    
+    <nav class="navbar hug-nav">
+        <div class="nav-brand">💕 V & P 💕</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="rose-day.html">Rose Day</a>
+            <a href="propose-day.html">Propose Day</a>
+            <a href="chocolate-day.html">Chocolate Day</a>
+            <a href="teddy-day.html">Teddy Day</a>
+            <a href="promise-day.html">Promise Day</a>
+            <a href="hug-day.html" class="active">Hug Day</a>
+            <a href="valentine-day.html">Valentine's Day</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main class="hug-main">
+        <div class="hug-hero">
+            <h1>🤗 Happy Hug Day 🤗</h1>
+            <h2>My Warmest Priyanka</h2>
+            
+            <div class="hug-animation-container">
+                <div class="hugging-couple" id="huggingCouple">
+                    <div class="person person1">
+                        <div class="head"></div>
+                        <div class="body"></div>
+                        <div class="arm arm-back"></div>
+                        <div class="arm arm-front"></div>
+                    </div>
+                    <div class="person person2">
+                        <div class="head"></div>
+                        <div class="body"></div>
+                        <div class="arm arm-back"></div>
+                        <div class="arm arm-front"></div>
+                    </div>
+                    <div class="love-aura"></div>
+                    <div class="floating-hearts-hug">
+                        <span>💕</span><span>💖</span><span>💗</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="virtual-hug-section">
+                <h3>Send a Virtual Hug! 🤗</h3>
+                <div class="hug-button-container">
+                    <button class="mega-hug-btn" id="hugBtn" onclick="sendVirtualHug()">
+                        <span class="hug-icon">🤗</span>
+                        <span class="hug-text">Click for a Warm Hug!</span>
+                    </button>
+                </div>
+                <div class="hug-meter">
+                    <p>Warmth Level: <span id="warmthLevel">❄️</span></p>
+                    <div class="warmth-bar">
+                        <div class="warmth-fill" id="warmthFill"></div>
+                    </div>
+                    <p class="hug-count">Hugs Sent: <span id="hugsSent">0</span></p>
+                </div>
+            </div>
+            
+            <div class="hug-message">
+                <div class="message-bubble">
+                    <p>In your arms, I find my peace. In your embrace, I find my home. Every hug from you feels like the warmest blanket on the coldest night.</p>
+                    <p>When words fail, a hug says it all. And my hugs for you, Priyanka, speak of infinite love! 🤗💕</p>
+                </div>
+            </div>
+            
+            <div class="hug-types">
+                <h3>Types of Hugs for You 💕</h3>
+                <div class="hug-cards">
+                    <div class="hug-card" onclick="showHugType('bear')">
+                        <div class="hug-emoji">🐻</div>
+                        <h4>Bear Hug</h4>
+                        <p>Tight and protective, like I'll never let go!</p>
+                    </div>
+                    <div class="hug-card" onclick="showHugType('comfort')">
+                        <div class="hug-emoji">🤗</div>
+                        <h4>Comfort Hug</h4>
+                        <p>Soft and gentle, to make all worries disappear.</p>
+                    </div>
+                    <div class="hug-card" onclick="showHugType('surprise')">
+                        <div class="hug-emoji">🎉</div>
+                        <h4>Surprise Hug</h4>
+                        <p>From behind, when you least expect it!</p>
+                    </div>
+                    <div class="hug-card" onclick="showHugType('long')">
+                        <div class="hug-emoji">⏰</div>
+                        <h4>Long Hug</h4>
+                        <p>The kind that lasts forever, just like my love.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hug-poem">
+                <div class="poem-card">
+                    <p><em>A hug can say "I love you,"</em></p>
+                    <p><em>A hug can say "I care,"</em></p>
+                    <p><em>A hug is just my way of saying,</em></p>
+                    <p><em>"I'll always be there."</em></p>
+                    <p class="signature">🤗 Your Vishal</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="navigation-buttons">
+            <a href="promise-day.html" class="nav-btn prev"><i class="fas fa-arrow-left"></i> Promise Day</a>
+            <a href="valentine-day.html" class="nav-btn next">Valentine's Day <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </main>
+
+    <footer class="hug-footer">
+        <p>Sending you the warmest hugs 🤗 - Your Vishal</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="hug-day.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🤝 Promise Day - My Promises to Priyanka 🤝</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="promise-day.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="promise-theme">
+    <div class="floating-ribbons" id="floatingRibbons"></div>
+    
+    <nav class="navbar promise-nav">
+        <div class="nav-brand">💕 V & P 💕</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="rose-day.html">Rose Day</a>
+            <a href="propose-day.html">Propose Day</a>
+            <a href="chocolate-day.html">Chocolate Day</a>
+            <a href="teddy-day.html">Teddy Day</a>
+            <a href="promise-day.html" class="active">Promise Day</a>
+            <a href="hug-day.html">Hug Day</a>
+            <a href="valentine-day.html">Valentine's Day</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main class="promise-main">
+        <div class="promise-hero">
+            <h1>🤝 Happy Promise Day 🤝</h1>
+            <h2>My Beloved Priyanka</h2>
+            
+            <div class="pinky-promise-animation">
+                <div class="hands-container">
+                    <div class="hand left-hand">
+                        <div class="palm"></div>
+                        <div class="finger pinky"></div>
+                    </div>
+                    <div class="hand right-hand">
+                        <div class="palm"></div>
+                        <div class="finger pinky"></div>
+                    </div>
+                    <div class="promise-heart">💕</div>
+                </div>
+                <p class="pinky-text">Pinky Promise! 🤙</p>
+            </div>
+            
+            <div class="promises-section">
+                <h3>My Promises To You 💕</h3>
+                <div class="promise-scroll">
+                    <div class="promise-card" onclick="sealPromise(this)">
+                        <div class="promise-icon">💕</div>
+                        <div class="promise-text">
+                            <h4>Promise #1</h4>
+                            <p>I promise to love you unconditionally, through every storm and every sunshine.</p>
+                        </div>
+                        <div class="seal">💋</div>
+                    </div>
+                    
+                    <div class="promise-card" onclick="sealPromise(this)">
+                        <div class="promise-icon">🌟</div>
+                        <div class="promise-text">
+                            <h4>Promise #2</h4>
+                            <p>I promise to always make you smile, even on your darkest days.</p>
+                        </div>
+                        <div class="seal">💋</div>
+                    </div>
+                    
+                    <div class="promise-card" onclick="sealPromise(this)">
+                        <div class="promise-icon">🤝</div>
+                        <div class="promise-text">
+                            <h4>Promise #3</h4>
+                            <p>I promise to stand by your side, as your partner, your best friend, and your biggest supporter.</p>
+                        </div>
+                        <div class="seal">💋</div>
+                    </div>
+                    
+                    <div class="promise-card" onclick="sealPromise(this)">
+                        <div class="promise-icon">👂</div>
+                        <div class="promise-text">
+                            <h4>Promise #4</h4>
+                            <p>I promise to always listen to you, to understand you, and to respect your feelings.</p>
+                        </div>
+                        <div class="seal">💋</div>
+                    </div>
+                    
+                    <div class="promise-card" onclick="sealPromise(this)">
+                        <div class="promise-icon">🏠</div>
+                        <div class="promise-text">
+                            <h4>Promise #5</h4>
+                            <p>I promise to build a beautiful home with you, filled with love, laughter, and endless memories.</p>
+                        </div>
+                        <div class="seal">💋</div>
+                    </div>
+                    
+                    <div class="promise-card" onclick="sealPromise(this)">
+                        <div class="promise-icon">🎯</div>
+                        <div class="promise-text">
+                            <h4>Promise #6</h4>
+                            <p>I promise to grow with you, to chase our dreams together, and to never give up on us.</p>
+                        </div>
+                        <div class="seal">💋</div>
+                    </div>
+                    
+                    <div class="promise-card" onclick="sealPromise(this)">
+                        <div class="promise-icon">♾️</div>
+                        <div class="promise-text">
+                            <h4>Promise #7</h4>
+                            <p>I promise to love you more with each passing day, until forever ends.</p>
+                        </div>
+                        <div class="seal">💋</div>
+                    </div>
+                </div>
+                
+                <div class="sealed-counter">
+                    <p>Promises Sealed: <span id="sealedCount">0</span>/7 💋</p>
+                </div>
+            </div>
+            
+            <div class="promise-certificate" id="certificate" style="display: none;">
+                <div class="certificate-content">
+                    <h3>💕 Certificate of Promises 💕</h3>
+                    <p>This certifies that</p>
+                    <h2>Vishal</h2>
+                    <p>has made these sacred promises to</p>
+                    <h2>Priyanka</h2>
+                    <p>and shall honor them for eternity</p>
+                    <div class="certificate-seal">💕</div>
+                    <p class="date">February 11, 2025</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="navigation-buttons">
+            <a href="teddy-day.html" class="nav-btn prev"><i class="fas fa-arrow-left"></i> Teddy Day</a>
+            <a href="hug-day.html" class="nav-btn next">Hug Day <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </main>
+
+    <footer class="promise-footer">
+        <p>These promises are sealed with love 💋 - Your Vishal</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="promise-day.js"></script>
+</body>
+</html>

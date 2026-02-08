@@ -1,0 +1,473 @@
+/* ============================================
+   TEDDY DAY STYLES
+   ============================================ */
+
+.teddy-theme {
+    background: linear-gradient(135deg, #1a1510 0%, #2d2015 50%, #1a0f0a 100%);
+}
+
+/* Floating Stars */
+.floating-stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.star {
+    position: absolute;
+    font-size: 20px;
+    animation: starFloat 8s ease-in-out infinite;
+}
+
+@keyframes starFloat {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0.5;
+    }
+    50% {
+        transform: translateY(-30px) rotate(180deg);
+        opacity: 1;
+    }
+}
+
+/* Teddy Navigation */
+.teddy-nav {
+    background: rgba(244, 162, 97, 0.1);
+    border-bottom: 1px solid rgba(244, 162, 97, 0.2);
+}
+
+/* Teddy Main */
+.teddy-main {
+    min-height: 100vh;
+    padding: 100px 20px 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.teddy-hero {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.teddy-hero h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    color: #f4a261;
+    text-shadow: 0 0 30px rgba(244, 162, 97, 0.5);
+    margin-bottom: 15px;
+}
+
+.teddy-hero h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: #ffcba4;
+    margin-bottom: 30px;
+}
+
+/* CSS Teddy Bear */
+.teddy-container {
+    margin: 40px auto;
+    position: relative;
+}
+
+.main-teddy {
+    position: relative;
+    cursor: pointer;
+}
+
+.teddy-bear {
+    width: 200px;
+    height: 280px;
+    margin: 0 auto;
+    position: relative;
+    animation: teddyBounce 2s ease-in-out infinite;
+}
+
+@keyframes teddyBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Teddy Head */
+.teddy-bear .head {
+    width: 140px;
+    height: 130px;
+    background: linear-gradient(135deg, #d4a574 0%, #a67c52 100%);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    box-shadow: inset -10px -10px 30px rgba(0, 0, 0, 0.2),
+                inset 10px 10px 30px rgba(255, 255, 255, 0.1);
+}
+
+/* Ears */
+.ear {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #d4a574 0%, #a67c52 100%);
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    z-index: 5;
+}
+
+.ear::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background: #f4a261;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.left-ear {
+    left: 10px;
+}
+
+.right-ear {
+    right: 10px;
+}
+
+/* Eyes */
+.eye {
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+}
+
+.left-eye {
+    left: 35px;
+}
+
+.right-eye {
+    right: 35px;
+}
+
+.pupil {
+    width: 12px;
+    height: 12px;
+    background: #1a1a1a;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: eyeLook 3s ease-in-out infinite;
+}
+
+@keyframes eyeLook {
+    0%, 100% { transform: translate(-50%, -50%); }
+    25% { transform: translate(-30%, -50%); }
+    75% { transform: translate(-70%, -50%); }
+}
+
+/* Nose */
+.teddy-bear .nose {
+    width: 25px;
+    height: 18px;
+    background: #2d1810;
+    border-radius: 50%;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Mouth */
+.teddy-bear .mouth {
+    width: 40px;
+    height: 20px;
+    border: 3px solid #2d1810;
+    border-top: none;
+    border-radius: 0 0 50% 50%;
+    position: absolute;
+    top: 85px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Blush */
+.blush {
+    width: 25px;
+    height: 15px;
+    background: rgba(255, 150, 150, 0.5);
+    border-radius: 50%;
+    position: absolute;
+    top: 65px;
+}
+
+.left-blush {
+    left: 20px;
+}
+
+.right-blush {
+    right: 20px;
+}
+
+/* Body */
+.teddy-bear .body {
+    width: 160px;
+    height: 140px;
+    background: linear-gradient(135deg, #d4a574 0%, #a67c52 100%);
+    border-radius: 50% 50% 45% 45%;
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: inset -10px -10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.belly {
+    width: 90px;
+    height: 80px;
+    background: #f4a261;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Arms */
+.arm {
+    width: 45px;
+    height: 80px;
+    background: linear-gradient(135deg, #d4a574 0%, #a67c52 100%);
+    border-radius: 25px;
+    position: absolute;
+    top: 20px;
+}
+
+.left-arm {
+    left: -20px;
+    transform: rotate(30deg);
+}
+
+.right-arm {
+    right: -20px;
+    transform: rotate(-30deg);
+}
+
+/* Legs */
+.leg {
+    width: 50px;
+    height: 60px;
+    background: linear-gradient(135deg, #d4a574 0%, #a67c52 100%);
+    border-radius: 25px;
+    position: absolute;
+    bottom: -30px;
+}
+
+.left-leg {
+    left: 25px;
+}
+
+.right-leg {
+    right: 25px;
+}
+
+/* Heart Badge */
+.heart-badge {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    animation: heartPulse 1s ease-in-out infinite;
+}
+
+@keyframes heartPulse {
+    0%, 100% { transform: translateX(-50%) scale(1); }
+    50% { transform: translateX(-50%) scale(1.2); }
+}
+
+/* Message Bubble */
+.teddy-message-bubble {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    padding: 15px 25px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    min-width: 200px;
+}
+
+.teddy-message-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 10px solid transparent;
+    border-top-color: #fff;
+}
+
+.teddy-message-bubble p {
+    color: #a67c52;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* Hug Counter */
+.hug-counter {
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(244, 162, 97, 0.2);
+    border-radius: 15px;
+    max-width: 300px;
+}
+
+.hug-counter p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+#hugCount {
+    font-size: 2rem;
+    color: #f4a261;
+    font-weight: bold;
+}
+
+.hug-btn {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    background: linear-gradient(135deg, #f4a261 0%, #e76f51 100%);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.hug-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 30px rgba(244, 162, 97, 0.5);
+}
+
+/* Message Section */
+.teddy-message-section {
+    margin: 40px auto;
+    max-width: 700px;
+}
+
+.message-card {
+    background: rgba(244, 162, 97, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    border: 1px solid rgba(244, 162, 97, 0.3);
+}
+
+.message-card p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* Teddy Collection */
+.teddy-collection {
+    margin: 50px auto;
+}
+
+.teddy-collection h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8rem;
+    color: #f4a261;
+    margin-bottom: 30px;
+}
+
+.collection-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.mini-teddy {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.mini-teddy:hover {
+    transform: scale(1.1);
+    background: rgba(244, 162, 97, 0.2);
+}
+
+.mini-bear {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.mini-teddy span {
+    display: block;
+    font-size: 0.9rem;
+}
+
+/* Teddy Poem */
+.teddy-poem {
+    margin: 50px auto;
+    max-width: 500px;
+}
+
+.teddy-poem .poem-card {
+    background: linear-gradient(135deg, rgba(244, 162, 97, 0.2), rgba(231, 111, 81, 0.2));
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    border: 2px solid #f4a261;
+}
+
+.teddy-poem .poem-card p {
+    font-size: 1.2rem;
+    line-height: 2;
+    color: #ffcba4;
+}
+
+.teddy-poem .signature {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem !important;
+    color: #f4a261;
+    margin-top: 20px;
+}
+
+/* Teddy Footer */
+.teddy-footer {
+    background: rgba(166, 124, 82, 0.3);
+}
+
+.teddy-footer p {
+    color: #f4a261;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .teddy-bear {
+        transform: scale(0.8);
+    }
+    
+    .teddy-hero h1 {
+        font-size: 2rem;
+    }
+}

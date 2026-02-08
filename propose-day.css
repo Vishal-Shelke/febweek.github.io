@@ -1,0 +1,379 @@
+/* ============================================
+   PROPOSE DAY STYLES
+   ============================================ */
+
+.propose-theme {
+    background: linear-gradient(135deg, #1a0a1a 0%, #2d0a2d 50%, #1a051a 100%);
+}
+
+/* Sparkles */
+.sparkles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.sparkle {
+    position: absolute;
+    font-size: 15px;
+    animation: sparkle 3s ease-in-out infinite;
+}
+
+@keyframes sparkle {
+    0%, 100% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Propose Navigation */
+.propose-nav {
+    background: rgba(157, 78, 221, 0.1);
+    border-bottom: 1px solid rgba(157, 78, 221, 0.2);
+}
+
+/* Propose Main */
+.propose-main {
+    min-height: 100vh;
+    padding: 100px 20px 50px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Ring Box */
+.ring-box-container {
+    text-align: center;
+    margin: 40px auto;
+}
+
+.ring-box {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+    cursor: pointer;
+    perspective: 1000px;
+}
+
+.box-base {
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(135deg, #4a0080 0%, #2d004d 100%);
+    border-radius: 10px 10px 15px 15px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(74, 0, 128, 0.5);
+}
+
+.box-lid {
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(135deg, #6a0dad 0%, #4a0080 100%);
+    border-radius: 15px 15px 5px 5px;
+    position: absolute;
+    top: 40px;
+    transform-origin: bottom;
+    transition: transform 0.8s ease;
+    z-index: 10;
+    box-shadow: 0 -5px 20px rgba(106, 13, 173, 0.5);
+}
+
+.ring-box.opened .box-lid {
+    transform: rotateX(-120deg);
+}
+
+.cushion {
+    width: 80%;
+    height: 60px;
+    background: linear-gradient(135deg, #ff69b4 0%, #ff1493 100%);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 20px;
+}
+
+.ring {
+    position: absolute;
+    bottom: 50px;
+    z-index: 5;
+    animation: ringShine 2s ease-in-out infinite;
+}
+
+.diamond {
+    font-size: 3rem;
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.8));
+}
+
+@keyframes ringShine {
+    0%, 100% {
+        filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.8));
+    }
+    50% {
+        filter: drop-shadow(0 0 40px rgba(255, 255, 255, 1));
+    }
+}
+
+.click-hint {
+    margin-top: 20px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.3rem;
+    color: #9d4edd;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+/* Propose Content */
+.propose-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.propose-content h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    color: #9d4edd;
+    text-shadow: 0 0 30px rgba(157, 78, 221, 0.5);
+    margin-bottom: 15px;
+}
+
+.propose-content h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: #e0aaff;
+    margin-bottom: 30px;
+}
+
+/* Love Letter */
+.love-letter {
+    background: rgba(157, 78, 221, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    margin: 30px auto;
+    max-width: 700px;
+    border: 1px solid rgba(157, 78, 221, 0.3);
+}
+
+.letter-content p {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+/* Proposal Section */
+.proposal-section {
+    margin: 50px auto;
+    padding: 40px;
+    background: linear-gradient(135deg, rgba(157, 78, 221, 0.2), rgba(90, 24, 154, 0.2));
+    border-radius: 30px;
+    max-width: 600px;
+}
+
+.proposal-question {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    color: #e0aaff;
+    margin-bottom: 30px;
+    animation: questionPulse 2s ease-in-out infinite;
+}
+
+@keyframes questionPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.proposal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    position: relative;
+    min-height: 80px;
+}
+
+.yes-btn {
+    padding: 20px 60px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: linear-gradient(135deg, #ff6b9d 0%, #c9184a 100%);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(255, 107, 157, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+.yes-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 40px rgba(255, 107, 157, 0.6);
+}
+
+.yes-btn::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transform: rotate(45deg);
+    animation: shine 3s infinite;
+}
+
+@keyframes shine {
+    0% { left: -50%; }
+    100% { left: 150%; }
+}
+
+.no-btn {
+    padding: 20px 60px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: linear-gradient(135deg, #666 0%, #444 100%);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: absolute;
+}
+
+.escape-counter {
+    margin-top: 100px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.2rem;
+    color: #e0aaff;
+    min-height: 30px;
+}
+
+/* Celebration */
+.celebration {
+    text-align: center;
+    padding: 50px;
+    animation: celebrationAppear 1s ease-out;
+}
+
+@keyframes celebrationAppear {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.celebration h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3.5rem;
+    color: #ff6b9d;
+    text-shadow: 0 0 50px rgba(255, 107, 157, 0.8);
+    margin-bottom: 30px;
+    animation: celebrateText 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes celebrateText {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.05); }
+}
+
+.celebration-hearts {
+    font-size: 3rem;
+    margin: 20px 0;
+}
+
+.celebration-hearts span {
+    animation: heartJump 0.5s ease-in-out infinite alternate;
+    display: inline-block;
+}
+
+.celebration-hearts span:nth-child(2) { animation-delay: 0.1s; }
+.celebration-hearts span:nth-child(3) { animation-delay: 0.2s; }
+.celebration-hearts span:nth-child(4) { animation-delay: 0.3s; }
+.celebration-hearts span:nth-child(5) { animation-delay: 0.4s; }
+
+@keyframes heartJump {
+    0% { transform: translateY(0) scale(1); }
+    100% { transform: translateY(-20px) scale(1.2); }
+}
+
+.celebration p {
+    font-size: 1.3rem;
+    margin: 15px 0;
+    color: #e0aaff;
+}
+
+.forever-text {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem !important;
+    color: #ff6b9d;
+}
+
+/* Confetti */
+.confetti {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.confetti-piece {
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    animation: confettiFall 3s ease-out forwards;
+}
+
+@keyframes confettiFall {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+/* Propose Footer */
+.propose-footer {
+    background: rgba(90, 24, 154, 0.3);
+}
+
+.propose-footer p {
+    color: #9d4edd;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .propose-content h1 {
+        font-size: 2rem;
+    }
+    
+    .proposal-question {
+        font-size: 1.8rem;
+    }
+    
+    .yes-btn, .no-btn {
+        padding: 15px 40px;
+        font-size: 1.2rem;
+    }
+}

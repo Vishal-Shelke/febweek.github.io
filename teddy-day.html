@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧸 Teddy Day - Cuddly Love for Priyanka 🧸</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="teddy-day.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="teddy-theme">
+    <div class="floating-stars" id="floatingStars"></div>
+    
+    <nav class="navbar teddy-nav">
+        <div class="nav-brand">💕 V & P 💕</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="rose-day.html">Rose Day</a>
+            <a href="propose-day.html">Propose Day</a>
+            <a href="chocolate-day.html">Chocolate Day</a>
+            <a href="teddy-day.html" class="active">Teddy Day</a>
+            <a href="promise-day.html">Promise Day</a>
+            <a href="hug-day.html">Hug Day</a>
+            <a href="valentine-day.html">Valentine's Day</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main class="teddy-main">
+        <div class="teddy-hero">
+            <h1>🧸 Happy Teddy Day 🧸</h1>
+            <h2>My Cuddly Priyanka</h2>
+            
+            <div class="teddy-container">
+                <div class="main-teddy" id="mainTeddy">
+                    <div class="teddy-bear">
+                        <div class="ear left-ear"></div>
+                        <div class="ear right-ear"></div>
+                        <div class="head">
+                            <div class="eye left-eye">
+                                <div class="pupil"></div>
+                            </div>
+                            <div class="eye right-eye">
+                                <div class="pupil"></div>
+                            </div>
+                            <div class="nose"></div>
+                            <div class="mouth"></div>
+                            <div class="blush left-blush"></div>
+                            <div class="blush right-blush"></div>
+                        </div>
+                        <div class="body">
+                            <div class="belly"></div>
+                            <div class="arm left-arm"></div>
+                            <div class="arm right-arm"></div>
+                            <div class="leg left-leg"></div>
+                            <div class="leg right-leg"></div>
+                            <div class="heart-badge">💕</div>
+                        </div>
+                    </div>
+                    <div class="teddy-message-bubble" id="teddyMessage">
+                        <p>Click me for a hug! 🤗</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hug-counter">
+                <p>Hugs Given: <span id="hugCount">0</span> 🤗</p>
+                <button class="hug-btn" onclick="giveTeddyHug()">Give Teddy a Hug! 🧸</button>
+            </div>
+            
+            <div class="teddy-message-section">
+                <div class="message-card">
+                    <p>Just like this teddy bear, I want to be there for you always - to comfort you, to make you smile, and to be your forever cuddle buddy!</p>
+                    <p>When I'm not around, let this virtual teddy remind you of my warm hugs and endless love! 🧸💕</p>
+                </div>
+            </div>
+            
+            <div class="teddy-collection">
+                <h3>Your Teddy Collection 🧸</h3>
+                <div class="collection-grid">
+                    <div class="mini-teddy" onclick="selectTeddy('brown')">
+                        <div class="mini-bear brown">🧸</div>
+                        <span>Brownie</span>
+                    </div>
+                    <div class="mini-teddy" onclick="selectTeddy('pink')">
+                        <div class="mini-bear pink">🩷</div>
+                        <span>Pinky</span>
+                    </div>
+                    <div class="mini-teddy" onclick="selectTeddy('white')">
+                        <div class="mini-bear white">🤍</div>
+                        <span>Snowy</span>
+                    </div>
+                    <div class="mini-teddy" onclick="selectTeddy('golden')">
+                        <div class="mini-bear golden">⭐</div>
+                        <span>Goldie</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="teddy-poem">
+                <div class="poem-card">
+                    <p><em>Soft and cuddly, warm and sweet,</em></p>
+                    <p><em>This teddy makes our love complete.</em></p>
+                    <p><em>Hold it close when I'm away,</em></p>
+                    <p><em>It carries my love every day!</em></p>
+                    <p class="signature">🧸 Your Vishal</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="navigation-buttons">
+            <a href="chocolate-day.html" class="nav-btn prev"><i class="fas fa-arrow-left"></i> Chocolate Day</a>
+            <a href="promise-day.html" class="nav-btn next">Promise Day <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </main>
+
+    <footer class="teddy-footer">
+        <p>Sending you virtual cuddles 🧸 - Your Vishal</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="teddy-day.js"></script>
+</body>
+</html>

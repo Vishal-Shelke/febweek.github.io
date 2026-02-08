@@ -1,0 +1,102 @@
+{
+  "name": "Feb",
+  "language": "javascript",
+  "files": [
+    {
+      "path": "index.html",
+      "description": "Main landing page with envelope animation, countdown timer, and navigation to all Valentine's Week days"
+    },
+    {
+      "path": "rose-day.html",
+      "description": "Rose Day page with animated blooming rose, falling petals, and interactive bouquet collection"
+    },
+    {
+      "path": "propose-day.html",
+      "description": "Propose Day page with ring box animation and the playful escaping 'No' button feature"
+    },
+    {
+      "path": "chocolate-day.html",
+      "description": "Chocolate Day page with interactive chocolate box that opens and displays love messages for each chocolate"
+    },
+    {
+      "path": "teddy-day.html",
+      "description": "Teddy Day page with an animated CSS teddy bear, hug counter, and teddy collection"
+    },
+    {
+      "path": "promise-day.html",
+      "description": "Promise Day page with animated pinky promise, sealable promise cards, and a certificate"
+    },
+    {
+      "path": "hug-day.html",
+      "description": "Hug Day page with animated hugging couple, virtual hug button with warmth meter"
+    },
+    {
+      "path": "valentine-day.html",
+      "description": "Grand Valentine's Day finale page with love letter, 14 reasons, timeline, and celebration effects"
+    },
+    {
+      "path": "styles.css",
+      "description": "Main stylesheet with CSS variables, animations, and responsive design for the entire website"
+    },
+    {
+      "path": "rose-day.css",
+      "description": "Rose Day specific styles with animated blooming rose and falling petals"
+    },
+    {
+      "path": "propose-day.css",
+      "description": "Propose Day styles with ring box animation and escaping button mechanics"
+    },
+    {
+      "path": "chocolate-day.css",
+      "description": "Chocolate Day styles with interactive chocolate box and melting chocolate effects"
+    },
+    {
+      "path": "teddy-day.css",
+      "description": "Teddy Day styles with pure CSS animated teddy bear"
+    },
+    {
+      "path": "promise-day.css",
+      "description": "Promise Day styles with animated pinky promise and sealable promise cards"
+    },
+    {
+      "path": "hug-day.css",
+      "description": "Hug Day styles with animated hugging couple and warmth meter"
+    },
+    {
+      "path": "valentine-day.css",
+      "description": "Valentine's Day grand finale styles with fireworks, beating heart, and celebration effects"
+    },
+    {
+      "path": "script.js",
+      "description": "Main JavaScript file with common functionality like floating hearts, countdown, and navigation"
+    },
+    {
+      "path": "rose-day.js",
+      "description": "Rose Day JavaScript with petal animations and bouquet collection"
+    },
+    {
+      "path": "propose-day.js",
+      "description": "Propose Day JavaScript with the famous escaping 'No' button and celebration effects"
+    },
+    {
+      "path": "chocolate-day.js",
+      "description": "Chocolate Day JavaScript with interactive chocolate box and eating animations"
+    },
+    {
+      "path": "teddy-day.js",
+      "description": "Teddy Day JavaScript with hug counter and teddy animations"
+    },
+    {
+      "path": "promise-day.js",
+      "description": "Promise Day JavaScript with sealable promise cards and certificate reveal"
+    },
+    {
+      "path": "hug-day.js",
+      "description": "Hug Day JavaScript with virtual hug system and warmth meter"
+    },
+    {
+      "path": "valentine-day.js",
+      "description": "Valentine's Day grand finale JavaScript with fireworks, heart rain, and massive celebration effects"
+    }
+  ]
+}

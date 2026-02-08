@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💍 Propose Day - Will You Be My Valentine? 💍</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="propose-day.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="propose-theme">
+    <div class="sparkles" id="sparkles"></div>
+    
+    <nav class="navbar propose-nav">
+        <div class="nav-brand">💕 V & P 💕</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="rose-day.html">Rose Day</a>
+            <a href="propose-day.html" class="active">Propose Day</a>
+            <a href="chocolate-day.html">Chocolate Day</a>
+            <a href="teddy-day.html">Teddy Day</a>
+            <a href="promise-day.html">Promise Day</a>
+            <a href="hug-day.html">Hug Day</a>
+            <a href="valentine-day.html">Valentine's Day</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main class="propose-main">
+        <div class="ring-box-container">
+            <div class="ring-box" id="ringBox" onclick="openRingBox()">
+                <div class="box-lid"></div>
+                <div class="box-base">
+                    <div class="ring">
+                        <div class="diamond">💎</div>
+                    </div>
+                    <div class="cushion"></div>
+                </div>
+            </div>
+            <p class="click-hint" id="clickHint">Click to open the box 💍</p>
+        </div>
+        
+        <div class="propose-content" id="proposeContent">
+            <h1>💍 Happy Propose Day 💍</h1>
+            <h2>My Dearest Priyanka</h2>
+            
+            <div class="love-letter">
+                <div class="letter-content">
+                    <p>From the moment I met you, I knew my life would never be the same. Your smile became my sunshine, your laughter my favorite melody, and your love my greatest treasure.</p>
+                    <p>Every day with you feels like a beautiful dream I never want to wake up from. You've made me believe in fairy tales and happily ever afters.</p>
+                    <p>So today, on this special Propose Day, I want to ask you something...</p>
+                </div>
+            </div>
+            
+            <div class="proposal-section">
+                <div class="question-container">
+                    <h2 class="proposal-question">Will You Be My Valentine Forever? 💕</h2>
+                    <div class="proposal-buttons">
+                        <button class="yes-btn" onclick="sayYes()">
+                            <span>Yes! 💕</span>
+                            <div class="hearts-burst"></div>
+                        </button>
+                        <button class="no-btn" id="noBtn" onmouseover="escapeButton()" onclick="tryClickNo()">
+                            <span>No</span>
+                        </button>
+                    </div>
+                    <p class="escape-counter" id="escapeCounter"></p>
+                </div>
+            </div>
+            
+            <div class="celebration" id="celebration" style="display: none;">
+                <div class="fireworks"></div>
+                <h1>🎉 She Said YES! 🎉</h1>
+                <div class="celebration-hearts">
+                    <span>💕</span><span>💖</span><span>💗</span><span>💓</span><span>💕</span>
+                </div>
+                <p>I'm the luckiest person in the world!</p>
+                <p>Thank you for choosing me, Priyanka!</p>
+                <p class="forever-text">Forever & Always 💕</p>
+                <div class="confetti" id="confetti"></div>
+            </div>
+        </div>
+        
+        <div class="navigation-buttons">
+            <a href="rose-day.html" class="nav-btn prev"><i class="fas fa-arrow-left"></i> Rose Day</a>
+            <a href="chocolate-day.html" class="nav-btn next">Chocolate Day <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </main>
+
+    <footer class="propose-footer">
+        <p>Will you be mine forever? 💍 - Your Vishal</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="propose-day.js"></script>
+</body>
+</html>
